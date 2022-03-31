@@ -20,7 +20,9 @@
 เราได้ทำการแบ่ง data ออกเป็น 3 ส่วนดังนี้
 
 train ...%
+
 validation ...%
+
 test ...%
 
 ## Network architecture
