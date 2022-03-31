@@ -10,7 +10,7 @@
 
 
 #### Data source
-tradingview
+กลุ่มเราได้ทำการดึงข้อมูลราคา Bitcoin มาจาก www.tradingview.com ผ่าน Library TvDatafeed
 
 #### Data pre-processing
 min-max normalize
