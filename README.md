@@ -17,7 +17,11 @@
 กลุ่มของเราใช้ Min-Max Normalize ในการ Pre-processing ของข้อมูล โดยกลุ่มเราใช้ราคาปิดในการเทรนโมเดล
 
 #### Data splitting
+เราได้ทำการแบ่ง data ออกเป็น 3 ส่วนดังนี้
 
+train ...%
+validation ...%
+test ...%
 
 ## Network architecture
 
