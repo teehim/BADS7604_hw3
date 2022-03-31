@@ -27,8 +27,11 @@ test ...%
 
 ## Network architecture
 ARIMA Model
+
 RNN
+
 LSTM
+
 GRU
 
 ## Training
