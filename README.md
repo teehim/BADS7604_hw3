@@ -18,12 +18,14 @@
 
 #### Data splitting
 เราได้ทำการแบ่ง data ออกเป็น 3 ส่วนดังนี้
+โดยที่มีเป้าหมายคือการทำนายราคาของ Bitcoin ของ 30 วันล่าสุด
+เราจึงเลือกแบ่ง Data ตามจำนวนวัน
 
-train ...%
+Train Data: 1110 วัน
 
-validation ...%
+Validation Data: 278 วัน
 
-test ...%
+Test Data: 30 วัน
 
 ## Network architecture
 ### ARIMA Model
@@ -78,14 +80,52 @@ test ...%
 
 ## Training
 
+#### ARIMA
 
+    เวลาที่ใช้ในการ Train 88.233 วินาที
+
+#### RNN
+
+    Trained on 1 NVIDIA GeForce RTX 3080
+
+    - Optimizer: Adam
+    - Learning rate: 0.001
+    - Loss Function: Mean Squeare Error
+    - Batch size: 128
+    - Epoch: 300
+
+    เวลาที่ใช้ในการ Train เฉลี่ย 21.47 ms/epoch
+
+#### LSTM
+
+    Trained on 1 NVIDIA GeForce RTX 3080
+
+    - Optimizer: Adam
+    - Learning rate: 0.001
+    - Loss Function: Mean Squeare Error
+    - Batch size: 128
+    - Epoch: 300
+
+    เวลาที่ใช้ในการ Train เฉลี่ย 10.84 ms/epoch
+
+#### GRU
+
+    Trained on 1 NVIDIA GeForce RTX 3080
+
+    - Optimizer: Adam
+    - Learning rate: 0.001
+    - Loss Function: Mean Squeare Error
+    - Batch size: 128
+    - Epoch: 300
+
+    เวลาที่ใช้ในการ Train เฉลี่ย 33.04 ms/epoch
 
 ## Results
 จากการ Train, Test และ Validation ได้ค่า Mean Square Error ออกมาดังนี้
 MSE
 - ARIMA: 9634641032.254011
-- RNN: 2196502267.229943
-- LSTM: 2052927766.0934634
+- RNN: 2196504059.13288
+- LSTM: 2621728661.542714
 - GRU: 2014365225.5934842
 
 ## Discussion
