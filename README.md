@@ -52,6 +52,10 @@ Test Data: 30 วัน
 - เนื่องจาก RNN ใช้ข้อมูลจาก Network ก่อนๆ ทำให้สามารถทำงานได้ดีในข้อมูลแบบ Time Series (นำข้อมูลเวลาก่อนๆ มาหาต่อกับเวลาปัจจุบัน) ซึ่ง Time Series นั้นรวมถึงข้อมูลแบบ Text และข้อมูลเสียง
 - ในทางทฤษดีนั้น RNN จะสามารถแก้ปัญหาแบบ Long Term ได้ดีมากๆ ถ้าเลือก Weight ได้ดี แต่ในการใช้จริงนั้นอาจจะไม่ได้ออกมาดึอย่างที่เราคาดไว้ เช่น “ผมเป็นคนไทย ผมสามารถพูดภาษา _(ไทย)_” ซึ่งคำว่า “ผม” “พูด” “ภาษา” นั้นไม่ได้ช่วยในการตอบคำถามมากนัก แต่ในการเลือก Weight ออกมาจริงๆ นั้น มันทำให้ข้อมูลสำคัญบางส่วนหายไปด้วย ซึ่ง LSTM (Long Short Term Memory) Network สามารถแก้ปัญหานี้ได้
 
+- ในส่วนของ Model ของเราจะเป็น Simple RNN 1 Layer โดยมี architecture ตามด้านล่าง
+
+<img src="https://github.com/teehim/BADS7604_hw3/blob/master/images/rnn_arch.JPG?raw=true" style="width:700px;"/>
+
 ### LSTM
 - Long Short Term Memory Network (LSTM) พัฒนาต่อมาจาก RNN ซึ่งทำงานได้ดีในการเรียนรู้แบบ Long-Term หลักการทำงานของ LSTM คือจะมี Weight กำหนดการลืม (Forget) ไว้ด้วย
   
@@ -72,11 +76,19 @@ Test Data: 30 วัน
 
    <a href="https://imgur.com/UPafMvS"><img src="https://i.imgur.com/UPafMvS.png" title="source: imgur.com" /></a>
 
+- ในส่วนของ Model ของเราจะเป็น Stacked LSTM Layer โดยมี architecture ตามด้านล่าง
+
+<img src="https://github.com/teehim/BADS7604_hw3/blob/master/images/lstm_arch.JPG?raw=true" style="width:700px;"/>
+
 ### GRU
 - Gated Recurrent Units (GRU) เป็นกลไลปิดเปิดการอัพเดทสถานะภายใน Recurrent Neural Network ที่คล้ายกับ Long Short-Term Memory (LSTM) ที่จะมี Forget Gate แต่มี Parameter น้อยกว่า LSTM เนื่องจากไม่มี Output Gate
 - GRU มีประสิทธิภาพใกล้เคียงกับ LSTM ในหลาย ๆ งาน แต่เนื่องจาก Parameter น้อยกว่าทำให้เทรนได้ง่ายกว่า เร็วกว่า และในบางงานที่ DataSet มีขนาดเล็ก พบว่า GRU ประสิทธิภาพดีกว่า
 
   <a href="https://imgur.com/n6MHlE4"><img src="https://i.imgur.com/n6MHlE4.png" title="source: imgur.com" /></a>
+
+- ในส่วนของ Model ของเราจะเป็น Stacked GRU Layer โดยมี architecture ตามด้านล่าง
+
+<img src="https://github.com/teehim/BADS7604_hw3/blob/master/images/gru_arch.JPG?raw=true" style="width:700px;"/>
 
 ## Training
 
