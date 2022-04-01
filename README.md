@@ -54,7 +54,7 @@ Test Data: 30 วัน
 
 - ในส่วนของ Model ของเราจะเป็น Simple RNN 1 Layer โดยมี architecture ตามด้านล่าง
 
-<img src="https://github.com/teehim/BADS7604_hw3/blob/master/images/rnn_arch.JPG?raw=true" style="width:700px;"/>
+<img src="https://github.com/teehim/BADS7604_hw3/blob/main/images/rnn_arch.JPG?raw=true" style="width:500px;"/>
 
 ### LSTM
 - Long Short Term Memory Network (LSTM) พัฒนาต่อมาจาก RNN ซึ่งทำงานได้ดีในการเรียนรู้แบบ Long-Term หลักการทำงานของ LSTM คือจะมี Weight กำหนดการลืม (Forget) ไว้ด้วย
@@ -78,7 +78,7 @@ Test Data: 30 วัน
 
 - ในส่วนของ Model ของเราจะเป็น Stacked LSTM Layer โดยมี architecture ตามด้านล่าง
 
-<img src="https://github.com/teehim/BADS7604_hw3/blob/master/images/lstm_arch.JPG?raw=true" style="width:700px;"/>
+<img src="https://github.com/teehim/BADS7604_hw3/blob/main/images/lstm_arch.JPG?raw=true" style="width:500px;"/>
 
 ### GRU
 - Gated Recurrent Units (GRU) เป็นกลไลปิดเปิดการอัพเดทสถานะภายใน Recurrent Neural Network ที่คล้ายกับ Long Short-Term Memory (LSTM) ที่จะมี Forget Gate แต่มี Parameter น้อยกว่า LSTM เนื่องจากไม่มี Output Gate
@@ -88,7 +88,7 @@ Test Data: 30 วัน
 
 - ในส่วนของ Model ของเราจะเป็น Stacked GRU Layer โดยมี architecture ตามด้านล่าง
 
-<img src="https://github.com/teehim/BADS7604_hw3/blob/master/images/gru_arch.JPG?raw=true" style="width:700px;"/>
+<img src="https://github.com/teehim/BADS7604_hw3/blob/main/images/gru_arch.JPG?raw=true" style="width:500px;"/>
 
 ## Training
 
