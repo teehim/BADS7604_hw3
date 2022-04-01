@@ -1,7 +1,8 @@
 # Bitcoin Price Prediction (POWER DS TEAM)
 
 ## Highlights
-
+- จากผลการ Test Model ทั้งหมด พบว่า RNN/LSTM/GRU มีความแม่นยำในการทำนายที่สูงกว่า ARIMA มาก
+- LSTM ใช้เวลาในการ Train น้อยที่สุด แต่ความแม่นยำต่พที่สุดในกลุ่ม RNN ด้วยกัน ในขณะที่ GRU ใช้เวลาในการ Train นานที่สุด แต่ความแม่นยำก็สูงที่สุดเช่นกัน
 
 ## Introduction
 กลุ่มของเราอยากทราบว่าโมเดล Deep Learning กลุ่ม RNN/LSTM/GRU นั้นสามารถที่จะทำนายราคาของ Bitcoin ได้หรือไม่ โดยกลุ่มของเราได้ทำการเทียบกับโมเดลทางสถิติที่ใช้ในการทำนายข้อมูลที่เป็น Time Series อย่าง ARIMA (AutoRegressive Integrated Moving Average)
