@@ -51,6 +51,24 @@ test ...%
 - ในทางทฤษดีนั้น RNN จะสามารถแก้ปัญหาแบบ Long Term ได้ดีมากๆ ถ้าเลือก Weight ได้ดี แต่ในการใช้จริงนั้นอาจจะไม่ได้ออกมาดึอย่างที่เราคาดไว้ เช่น “ผมเป็นคนไทย ผมสามารถพูดภาษา _(ไทย)_” ซึ่งคำว่า “ผม” “พูด” “ภาษา” นั้นไม่ได้ช่วยในการตอบคำถามมากนัก แต่ในการเลือก Weight ออกมาจริงๆ นั้น มันทำให้ข้อมูลสำคัญบางส่วนหายไปด้วย ซึ่ง LSTM (Long Short Term Memory) Network สามารถแก้ปัญหานี้ได้
 
 ### LSTM
+- Long Short Term Memory Network (LSTM) พัฒนาต่อมาจาก RNN ซึ่งทำงานได้ดีในการเรียนรู้แบบ Long-Term หลักการทำงานของ LSTM คือจะมี Weight กำหนดการลืม (Forget) ไว้ด้วย
+  
+  <a href="https://imgur.com/UDeu9ko"><img src="https://i.imgur.com/UDeu9ko.png" title="source: imgur.com" /></a>
+- ในส่วนแรกจะมี Sigmoid Layer ซึ่งให้ค่าออกมาระหว่าง 0 กับ 1 จะได้ค่าออกมา ซึ่งจะนำไปใช้ในการคูนกับ State ก่อนในภายหลัง ซึ่งเป็นการปรับการใช้ State เก่า
+  
+  <a href="https://imgur.com/sCLFuC3"><img src="https://i.imgur.com/sCLFuC3.png" title="source: imgur.com" /></a>
+  
+- ในส่วนถัดไปเราก็จะมีการคำนวน (ในส่วนของ tanh) แล้วนำค่านั้นไปคูณกับค่าที่ได้จาก Sigmoid Layer เพื่อตั้งค่า Weight ในข้อมูลใหม่
+
+  <a href="https://imgur.com/POmNkXo"><img src="https://i.imgur.com/POmNkXo.png" title="source: imgur.com" /></a>
+  
+- จากนั้นเราก็นำสองส่วนมารวมกัน ให้ลืมค่าเก่าบางส่วน และรับบางส่วนจากของใหม่มา จะได้ค่า Cell State
+
+  <a href="https://imgur.com/xS4iw06"><img src="https://i.imgur.com/xS4iw06.png" title="source: imgur.com" /></a>
+  
+- จากนั้นเราก็นำค่า Cell State มาคำนวน (tanh) และนำค่าที่ได้มาคูณกับค่าจาก Sigmoid Layer เพื่อตั้ง Weight ให้อีกครั้ง และจะได้ออกมาเป็นค่า h(t)
+
+   <a href="https://imgur.com/UPafMvS"><img src="https://i.imgur.com/UPafMvS.png" title="source: imgur.com" /></a>
 
 ### GRU
 
