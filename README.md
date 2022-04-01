@@ -144,20 +144,20 @@ MSE
 จากค่า Mean Square Error ที่ได้ออกมา ทำให้สรุปได้ว่า ARIMA Model มีความแม่นยำในการนายราคา Bitcoin ต่ำที่สุด
 
 ส่วนโมเดล Neural Network ทั้ง 3 ที่ทีมใช้มีค่า Mean Square Error ที่ใกล้เคียงกัน แต่น้อยกว่า ARIMA Model ค่อนข้างมากโดย
-  - Recurrent Neural Network มีค่า Mean Square Error สูงที่สุดในกลุ่ม Neural Network ทั้งหมด
-  - LSTM มีค่า Mean Square Error น้อยเป็นอันดับที่ 2
+  - LSTM มีค่า Mean Square Error สูงที่สุดในกลุ่ม Neural Network ทั้งหมด
+  - RNN มีค่า Mean Square Error น้อยเป็นอันดับที่ 2
   - ส่วน GRU นั้น มีค่า Mean Square Error ที่น้อยที่สุด
 
-จึงสรุปได้ว่า Neural Network นั้น มประสิทธิภาพในการทำนายข้อมูลประเภท Time Series ที่สูงกว่า Statistic Model ค่อนข้างมาก และเมื่อเปรียบเทียบในกลุ่ม Neural Network ด้วยกัน พบว่า ความแม่นยำนั้น เรียงลำดับได้ดังนี้
+จึงสรุปได้ว่า Neural Network นั้น มีประสิทธิภาพในการทำนายข้อมูลประเภท Time Series ที่สูงกว่า Statistic Model ค่อนข้างมาก และเมื่อเปรียบเทียบในกลุ่ม Neural Network ด้วยกัน พบว่า ความแม่นยำนั้น เรียงลำดับได้ดังนี้
 
   1.Gated Recurrent Units (GRU)
   
-  2.Long Short Term Memory Network (LSTM)
+  2.Recurrent Neural Network (RNN)
   
-  3.Recurrent Neural Network (RNN)
+  3.Long Short Term Memory Network (LSTM)
 
 ## Conclusion
-
+- การใช้ Neural Network ในการทำนายข้อมูล Bitcoin มีความแม่นยำกว่า Statistic Model โมเดลมาก อาจจะประยุกต์ไปใช้กับการทำทายสินทรัพย์อื่นๆได้ โดยหากจะนำไปพัฒนาต่อ อาจจะเปลี่ยนช่วงข้อมูลที่มีความถี่มากขึ้น เช่น รายชั่วโมงหรือรายนาที และอาจเพิ่มการใช้ Technical Indicator เข้าไปเพิ่มในการเทรนโมเดล อาจจะให้ความแม่นยำที่มากกว่าการใช้เพียงราคาอย่างเดียว
 
 ## References
 - https://www.facebook.com/investicbkk
@@ -167,10 +167,10 @@ MSE
 
 ## Members
 - (20%) 6220422048 กชกร เรืองศรี (Train RNN Model)
-- (0%) 6220422061 ไตรเทพ จันทร์เทพ (ติดต่อไม่ได้)
+- (0%)  6220422061 ไตรเทพ จันทร์เทพ (ติดต่อไม่ได้)
 - (20%) 6220422065 สุธาสินี โพธิ์แจ่ม (Train LSTM Model)
-- (20%) 6310422028 วรเมธ ปลอดโปร่ง (Train ARIMA Model)
+- (20%) 6310422028 วรเมธ ปลอดโปร่ง (ดึงข้อมูล, ช่วย Train LSTM Model, สรุปผล )
 - (20%) 6310422031 ธนัตถ์กรณ์ ชื่นบรรลือสุข (Train GRU Model)
-- (20%) 6310422046 วีระศักดิ์ การุณย์ (ดึงข้อมูล, ช่วย Train LSTM Model, สรุปผล )
+- (20%) 6310422046 วีระศักดิ์ การุณย์ (Train ARIMA Model)
 
 #### งานชึ้นนี้เป็นส่วนหนึ่งของวิชา BADS7604 การเรียนรู้เชิงลึก (Deep Learning) คณะสถิติประยุกต์ หลักสูตรวิทยาศาสตรมหาบัณฑิต การวิเคราะห์ธุรกิจและวิทยาการข้อมูล สถาบันบัณฑิตพัฒนบริหารศาสตร์
