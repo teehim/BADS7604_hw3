@@ -4,7 +4,7 @@
 
 
 ## Introduction
-
+กลุ่มของเราอยากทราบว่าโมเดล Deep Learning กลุ่ม RNN/LSTM/GRU นั้นสามารถที่จะทำนายราคาของ Bitcoin ได้หรือไม่ โดยกลุ่มของเราได้ทำการเทียบกับโมเดลทางสถิติที่ใช้ในการทำนายข้อมูลที่เป็น Time Series อย่าง ARIMA (AutoRegressive Integrated Moving Average)
 
 ## Data
 
