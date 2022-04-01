@@ -64,7 +64,7 @@ MSE
 
 
 ## References
-https://www.facebook.com/investicbkk
-https://th.tradingview.com/
-https://github.com/StreamAlpha/tvdatafeed
-https://sirawich99.medium.com/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88-rnn-lstm-gru-24-10-2020-95602afe3053
+- https://www.facebook.com/investicbkk
+- https://th.tradingview.com/
+- https://github.com/StreamAlpha/tvdatafeed
+- https://sirawich99.medium.com/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%88-rnn-lstm-gru-24-10-2020-95602afe3053
