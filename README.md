@@ -40,6 +40,15 @@ test ...%
     - คอนเซปของ MA นี้นั้นจะค่อนข้างคล้ายกับคอนเซปของ AR แต่จะตั้งบนสมมุติฐานของ Error แทน เช่น ถ้าพารามิเตอร์ q ของ MA เป็น 2 เป้าหมาย ณ วันนี้จะเท่ากับ Error ของเมื่อวาน * coefficient + ด้วย Error ของเมื่อวานซืน * coefficient
 
 ### RNN
+- Recurrent Neural Network (RNN) คือ Artificial Neural Network แบบหนึ่งที่ออกแบบมาแก้ปัญหาสำหรับงานที่ข้อมูลมีลำดับ Sequence โดยใช้หลักการ Feed สถานะภายในของโมเดล กลับมาเป็น Input ใหม่ คู่กับ Input ปกติ เรียกว่า Hidden State, Internal State, Memory ช่วยให้โมเดลรู้จำ Pattern ของลำดับ Input Sequence ได้ 
+
+<a href="https://imgur.com/wR8hPG8"><img src="https://i.imgur.com/wR8hPG8.png" title="source: imgur.com" /></a>
+- ซึ่งก็จะทำให้ออกมาเหมือนกับ Neural Network ธรรมดา ที่มีหลายๆ ตัว และต่อ Output เข้า Network ตัวใหม่ โดยสมการของ Recurrent Neural Network คือ
+
+<a href="https://imgur.com/smqLoEZ"><img src="https://i.imgur.com/smqLoEZ.png" title="source: imgur.com" /></a>
+- โดยสมการนี้แสดงถึงการที่ใช้ค่า Output ของ x(t) ร่วมกับ Output ของ h(t-1) (หรือ Output ของ Network ที่แล้ว) โดยมี Weight 2 ตัวปรับของ x(t) กับ h(t-1)
+- เนื่องจาก RNN ใช้ข้อมูลจาก Network ก่อนๆ ทำให้สามารถทำงานได้ดีในข้อมูลแบบ Time Series (นำข้อมูลเวลาก่อนๆ มาหาต่อกับเวลาปัจจุบัน) ซึ่ง Time Series นั้นรวมถึงข้อมูลแบบ Text และข้อมูลเสียง
+- ในทางทฤษดีนั้น RNN จะสามารถแก้ปัญหาแบบ Long Term ได้ดีมากๆ ถ้าเลือก Weight ได้ดี แต่ในการใช้จริงนั้นอาจจะไม่ได้ออกมาดึอย่างที่เราคาดไว้ เช่น “ผมเป็นคนไทย ผมสามารถพูดภาษา _(ไทย)_” ซึ่งคำว่า “ผม” “พูด” “ภาษา” นั้นไม่ได้ช่วยในการตอบคำถามมากนัก แต่ในการเลือก Weight ออกมาจริงๆ นั้น มันทำให้ข้อมูลสำคัญบางส่วนหายไปด้วย ซึ่ง LSTM (Long Short Term Memory) Network สามารถแก้ปัญหานี้ได้
 
 ### LSTM
 
