@@ -71,6 +71,10 @@ test ...%
    <a href="https://imgur.com/UPafMvS"><img src="https://i.imgur.com/UPafMvS.png" title="source: imgur.com" /></a>
 
 ### GRU
+- Gated recurrent units (GRUs) พัฒนาต่อมาจาก RNN ซึ่งมีการทำงานที่คล้ายกับ LSTM  โดย GRU จะเหมือนกับ LSTM ที่มี Forgot Gate แต่จะมีจำนวน Parameter ที่น้อยกว่า LSTM 
+- GRU สามารถนำไปใช้งานได้หลายอย่าง เช่น การทำโมเดล polyphonic Music, Speech Signal Modeling และ Natural Language Processing คล้ายกับ LSTM โดย GRUs จะมี Performance ที่ดีกว่าเมื่อข้อมูลมีขนาดเล็กและความถี่ที่น้อย 
+
+  <a href="https://imgur.com/n6MHlE4"><img src="https://i.imgur.com/n6MHlE4.png" title="source: imgur.com" /></a>
 
 ## Training
 
