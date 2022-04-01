@@ -89,9 +89,6 @@ MSE
 - GRU: 2014365225.5934842
 
 ## Discussion
-
-
-## Conclusion
 จากค่า Mean Square Error ที่ได้ออกมา ทำให้สรุปได้ว่า ARIMA Model มีความแม่นยำในการนายราคา Bitcoin ต่ำที่สุด
 
 ส่วนโมเดล Neural Network ทั้ง 3 ที่ทีมใช้มีค่า Mean Square Error ที่ใกล้เคียงกัน แต่น้อยกว่า ARIMA Model ค่อนข้างมากโดย
@@ -104,6 +101,9 @@ MSE
   1.Gated Recurrent Units (GRU)
   2.Long Short Term Memory Network (LSTM)
   3.Recurrent Neural Network (RNN)
+
+## Conclusion
+
 
 ## References
 - https://www.facebook.com/investicbkk
