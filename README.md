@@ -151,7 +151,9 @@ MSE
 จึงสรุปได้ว่า Neural Network นั้น มประสิทธิภาพในการทำนายข้อมูลประเภท Time Series ที่สูงกว่า Statistic Model ค่อนข้างมาก และเมื่อเปรียบเทียบในกลุ่ม Neural Network ด้วยกัน พบว่า ความแม่นยำนั้น เรียงลำดับได้ดังนี้
 
   1.Gated Recurrent Units (GRU)
+  
   2.Long Short Term Memory Network (LSTM)
+  
   3.Recurrent Neural Network (RNN)
 
 ## Conclusion
